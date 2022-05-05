@@ -6,5 +6,9 @@ while ( somma < 49 ){
     x.push(numero);
     somma = somma + numero; 
 }
+ if (somma>50){
+     alert("TROPPO!");
+ }
+
 console.log(x);
 console.log(somma);
