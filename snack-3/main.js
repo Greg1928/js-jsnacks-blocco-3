@@ -9,9 +9,15 @@ for ( let i = 0; i<10; i++){
         odd[i] = x[i];
     }
 }
+cleanEven = even.filter(function (){
+    return true
+});
+cleanOdd = odd.filter(function (){
+    return true
+});
+console.log(x);
+console.log("even " + cleanEven);
+console.log("odd " + cleanOdd);
 
-console.log(even);
-console.log(odd);
-
-document.getElementById("red").innerHTML = odd;
-document.getElementById("green").innerHTML = even;
+document.getElementById("red").innerHTML = cleanOdd;
+document.getElementById("green").innerHTML = cleanEven;
